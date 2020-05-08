@@ -1,4 +1,4 @@
-/*
+#b27ac7/*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Cinzel', serif;
 
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 /* HEADER STYLES */
 header {
   margin: 0;
-  height: 100vh;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,14 +64,14 @@ nav ul {
 /* MAIN STYLES */
 main {
   float:left;
-  width: 70%;
+  width: 80%;
 }
 /* INTRO STYLES */
 /* ABOUT STYLES */
 /* PROJECT-IDEAS STYLES */
 /* SERVICES STYLES */
 .service-box{
-  box-shadow: $boxShadow;
+  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 3em 3em;
   border-radius: .5em;
 }
@@ -81,7 +81,7 @@ main {
   margin-bottom: 1.5em;
 }
 .service-box-icon i{
-  color:$mainColor;
+  color:#b27ac7;
   font-size: 3em;
 }
 
@@ -90,13 +90,13 @@ main {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  color:$mainColor;
+  color:#b27ac7;
   font-size: 1.5em;
 }
 .service-box-content{
   margin: 1.5em 0;
   text-align: center;
-  color:$secondaryColor;
+  color:#999;
   line-height: 1.5em;
   font-size: 1.1em;
 }
@@ -108,9 +108,9 @@ main {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 500;
-  box-shadow:$boxShadow;
+  box-shadow:0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
   text-decoration: none;
-  color:$mainColor;
+  color:#b27ac7;
   padding: 1em;
   border-radius: .5em;
   transition: box-shadow .3s ease;
@@ -133,9 +133,9 @@ main {
 }
 #services .heading{
   font-size: 2em;
-  color:$secondaryColor;
+  color:#999;
   text-transform: uppercase;
-  margin: 3em 0;
+  padding: 1em 0;
   text-align: center;
 }
 #services .col-thirds {
@@ -147,7 +147,7 @@ aside {
   background-color: #D5A194;
   display: flex;
   float:right;
-  width: 30%;
+  width: 20%;
   align-items: center;
   /*justify-content: center;*/
   flex-direction: column;
@@ -177,7 +177,6 @@ h1 {
   background: #D5A194;
   box-shadow:  5px 5px 10px #b5897e,
                -5px -5px 10px #f5b9aa;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .btn:hover {
   box-shadow: inset 5px 5px 10px #b5897e,
@@ -197,7 +196,8 @@ aside a {
 }
 /* PORTFOLIO STYLES */
 .media-card {
-  box-shadow: $boxShadow;
+  background-color: #f2f2f2;
+  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: .5em;
   transition: box-shadow .3s ease;
 }
@@ -215,11 +215,11 @@ aside a {
   position: absolute;
   top: 15px;
   right: 15px;
-  background:$mainColor;
+  background:#b27ac7;
   color: #f2f2f2;
-  //background:$bgColor;
-  //color:$mainColor;
-  //box-shadow:$boxShadow;
+  //background:#f2f2f2;
+  //color:#b27ac7;
+  //box-shadow:0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: .5em 1em;
   border-radius: .5em;
 }
@@ -230,7 +230,7 @@ aside a {
 .media-card-title h2 {
   font-size: 1em;
   font-weight: bold;
-  color:$mainColor;
+  color:#b27ac7;
   text-transform: uppercase;
 }
 .media-card-meta-date {
@@ -240,11 +240,11 @@ aside a {
   right: 15px;
   font-style: italic;
   font-size: .8em;
-  color:$secondaryColor;
+  color:#999;
 }
 .media-card-content {
   padding: 0em 1em;
-  color:$secondaryColor;
+  color:#999;
 }
 .media-card-button {
   padding: 1.5em 1em;
@@ -254,10 +254,10 @@ aside a {
   text-decoration: none;
   //text-transform: uppercase;
   display: inline-block;
-  //box-shadow:$boxShadow;
+  //box-shadow:0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
   //padding: .7em;
   font-style: italic;
-  color:$mainColor;
+  color:#b27ac7;
   font-weight: 500;
   font-size: 1em
 }
