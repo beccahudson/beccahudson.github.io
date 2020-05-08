@@ -8,6 +8,8 @@ plum- #4C1B31
 medium blue- #093E60
 navy- #FAFAFA
 rose gold- #CD8D81
+rose gold gradient link- https://www.colorzilla.com/gradient-editor/#cd8561+0,e1ac8f+25,f2d4c3+50,e1ac8f+75,cd8561+100
+
 
 
 Styles Order:
@@ -45,11 +47,12 @@ main {
 /* PROJECT-IDEAS STYLES */
 /* SERVICES STYLES */
 /* CONTACT STYLES */
-/* SIDE STYLES */
+/* SIDE STYLES - color palatte: D5BBB2, D5A194, A56E60*/
 aside {
-  background-color: #CD8D81;
+  background-color: #D5A194;
   display: flex;
   float:right;
+  width: 30%;
   align-items: center;
   /*justify-content: center;*/
   flex-direction: column;
@@ -67,7 +70,7 @@ h1 {
   display: inline-flex;
 }
 .btn {
-  background: #CD8D81;
+  background: #D5A194;
   height: 80px;
   width: 80px;
   margin: 0 16px;
@@ -77,18 +80,18 @@ h1 {
   justify-content: center;
   cursor: pointer;
   transition: all 400ms;
-  box-shadow: 7px 7px 15px #9F665D,-4px -4px 13px #fff,
-        inset 4px 4px 8px rgba(172, 113, 103, 0.2),
+  box-shadow: 7px 7px 15px #A56E60,-4px -4px 13px #D5BBB2,
+        inset 4px 4px 8px rgba(209, 217, 230, 0.2),
         inset -8px -8px 8px rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .btn:hover {
-  box-shadow: 4px 2px 18px #9F665D, -4px -4px 13px #fff,
-        inset 6px 6px 16px rgba(172, 113, 103, 0.8),
+  box-shadow: 4px 2px 18px #A56E60, -4px -4px 13px #D5BBB2,
+        inset 6px 6px 16px rgba(213, 187, 178, 0.8),
         inset -8px -8px 8px rgba(255, 255, 255, 0.2);
   transform: translatey(2px);
 }
-.btn a {
+aside a {
   text-decoration: none;
 }
 .btn i {
