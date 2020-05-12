@@ -36,7 +36,9 @@ FOOTER STYLES
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel', serif;
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background-color: #f2f2f2;
 }
@@ -70,10 +72,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #D5A194;
+  background: #f2f2f2;
 }
 h1 {
-  color: #D5A194 !important;
+  color: #525252 !important;
   font-size: 8em;
   font-weight: bold;
   font-family: sans-serif;
@@ -94,6 +96,27 @@ main {
   width: 80%;
 }
 /* INTRO STYLES */
+.intro-box {
+  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1),
+              0px 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 1em 3em;
+  border-radius: .5em;
+}
+.intro-title{
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color:#D5A194;
+  font-size: 1.5em;
+}
+.intro-content{
+  margin: 1.5em 0;
+  text-align: center;
+  color:#999;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
 /* ABOUT STYLES */
 /* PROJECT-IDEAS STYLES */
 /* SERVICES STYLES */
@@ -232,13 +255,13 @@ aside a {
 .media-card-title {
   position: relative;
   padding: 1.5em 1em;
-  list-style: none;
 }
-.media-card-title a h2 {
+.media-card-title h2 {
   font-size: 1em;
   font-weight: bold;
   color:#D5A194;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .media-card-meta-date {
