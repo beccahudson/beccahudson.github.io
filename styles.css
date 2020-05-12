@@ -300,6 +300,7 @@ aside .heading {
 }
 aside row {
   margin: 1em auto;
+  float: left;
 }
 .btn i {
   font-size: 40px;
