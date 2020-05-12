@@ -112,7 +112,7 @@ main {
   border-radius: .5em;
   width: 80%;
 }
-.intro-box-title{
+.intro-title{
   display: block;
   text-align: center;
   font-weight: 700;
@@ -120,7 +120,7 @@ main {
   color:#D5A194;
   font-size: 1.5em;
 }
-.intro-box-content{
+.intro-content{
   list-style: none;
   margin: 1.5em 0;
   color:#999;
