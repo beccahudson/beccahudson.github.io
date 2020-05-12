@@ -139,12 +139,12 @@ header .row {
   justify-content: center;
 }
 h1 {
-  color: #f2f2f2 !important;
+  color: #0069ca !important;
   font-size: 5em;
   font-weight: bold;
   font-family: sans-serif;
   text-transform: uppercase;
-  text-shadow: -6px 6px 15px rgba(0, 0, 0, 0.15), 6px -6px 15px rgba(255, 255, 255, 1);
+  text-shadow: -6px 6px 15px rgba(0, 0, 0, 0.55);
   position: relative;
 }
 /* NAV STYLES */
@@ -174,8 +174,8 @@ main {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border: 3px solid #003d75;
-    box-shadow: 15px 15px 10px #00101f, -15px -15px 10px #0069ca;
+  border: 6px solid #003d75;
+  box-shadow: 5px 5px 10px #0069ca, -5px -5px 10px #0069ca;
 }
 .intro-content{
   margin: auto;
@@ -359,7 +359,7 @@ aside .row {
   position: absolute;
   top: 15px;
   right: 15px;
-  color: #eee;
+  color: #7dbbf5;
   box-shadow: 5px 5px 10px #00101f,
               -5px -5px 10px #0069ca;
   padding: .5em 1em;
