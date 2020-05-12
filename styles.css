@@ -203,7 +203,7 @@ main {
   padding: 1em 3em;
   border-radius: .5em;
 }
-.concept-img{
+.concept-img img {
   display: block;
   text-align: center;
   width: 100%;
