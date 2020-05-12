@@ -33,9 +33,6 @@ FOOTER STYLES
 * {
   font-family: 'Montserrat', sans-serif;
 }
-html {
-  background-color: #bdbdbd;
-}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cinzel', serif;
 }
@@ -65,8 +62,7 @@ hr {
 }
 body {
   float:left;
-  width: 80%;
-  background: #f2f2f2;
+  background: #bdbdbd;
 }
 .heading{
   font-size: 2em;
