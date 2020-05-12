@@ -393,14 +393,15 @@ aside .row {
   padding: 0 1em 1.5em 1em;
   text-align: center;
 }
-.media-card-button .btn {display: inline-block;
-    box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
-    color: #eee;
-    background: none;
-    padding: 1em;
-    text-transform: uppercase;
-    font-weight: 500;
-    height: auto;
-    width: auto;
+.media-card-button .btn {
+  display: inline-block;
+  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
+  color: #7dbbf5;
+  background: none;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  height: auto;
+  width: auto;
 }
 /* FOOTER STYLES */
