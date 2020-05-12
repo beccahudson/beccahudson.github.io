@@ -50,7 +50,7 @@ a, a:-webkit-any-link {
 }
 p {
   text-align: center;
-  color: #999;
+  color: #727272;
   line-height: 1.5em;
   font-size: 1.1em;
 }
@@ -169,7 +169,7 @@ main {
 .intro-content{
   margin: auto;
   text-align: center;
-  color:#999;
+  color:#727272;
   line-height: 1.5em;
   font-size: 1.1em;
   list-style: none;
@@ -190,7 +190,7 @@ main {
 .about-content{
   margin: auto;
   text-align: center;
-  color:#999;
+  color:#727272;
   line-height: 1.5em;
   font-size: 1.1em;
   list-style: none;
@@ -213,7 +213,7 @@ main {
 .concept-content{
   margin: 1.5em 0;
   text-align: center;
-  color:#999;
+  color:#727272;
   line-height: 1.5em;
   font-size: 1.1em;
 }
@@ -259,13 +259,16 @@ main {
   font-size: 1.5em;
 }*/
 .service-box-content{
-  margin: 1.5em 0;
-  color:#999;
+  color: #727272;
   line-height: 1.5em;
   font-size: 1.1em;
 }
+.service-box {
+  padding: 1em;
+  text-align: left;
+}
 .service-box ul {
-  padding-inline-start: 3em;
+  padding-inline-start: 1.5em;
 }
 
 /*
@@ -301,12 +304,18 @@ aside {
   margin: 0;
 }
 aside .heading {
-  margin: 0 auto 1em auto;
+  margin: 0 auto 1.5em auto;
+}
+aside .heading:nth-child(2) {
+  margin: 1.5em auto;
 }
 aside .row {
-  margin: 1em auto;
+  margin: auto;
   float: left;
   text-align: center;
+}
+.btn-container {
+  margin-bottom: 2em;
 }
 .btn i {
   font-size: 40px;
@@ -361,11 +370,11 @@ aside .row {
   right: 15px;
   font-style: italic;
   font-size: .8em;
-  color:#999;
+  color:#727272;
 }
 .media-card-content {
   padding: 0em 1em;
-  color:#999;
+  color:#727272;
 }
 .media-card-button {
   padding: 1.5em 1em;
