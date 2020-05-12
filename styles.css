@@ -125,7 +125,7 @@ header {
   width: 80%;
 }
 header .row {
-justify-content: center;
+  justify-content: center;
 }
 h1 {
   color: #f2f2f2 !important;
@@ -157,6 +157,11 @@ main {
   border-radius: .5em;
   width: 80%;
 }
+.intro-box img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 .intro-content{
   margin: auto;
   text-align: center;
@@ -185,22 +190,24 @@ main {
   width: 50%;
 }
 /* PROJECT-IDEAS STYLES */
-.concepts-box {
+.concept-box {
   margin: 3em auto;
   box-shadow: 0px -6px 10px rgba(255, 255, 255, 1),
               0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 1em 3em;
   border-radius: .5em;
-  width: 80%;
 }
-.concepts-content{
-  margin: auto;
+.concept-img{
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.concept-content{
+  margin: 1.5em 0;
   text-align: center;
   color:#999;
   line-height: 1.5em;
   font-size: 1.1em;
-  list-style: none;
-  width: 50%;
 }
 /* SERVICES STYLES */
 .service-box{
@@ -266,9 +273,11 @@ aside {
   height: 150vh;
   margin: 0;
 }
-.aside-title {
-  margin: 48px 0;
-  color: #525252;
+aside .heading {
+  margin: 0 auto;
+}
+aside row {
+  margin: 1em auto;
 }
 .btn i {
   font-size: 40px;
