@@ -236,7 +236,7 @@ main {
   height: auto;
   width: auto;
 }
-/* SERVICES STYLES */
+/* SERVICES STYLES
 .service-box{
   margin: 3em auto;
   box-shadow: 0px -6px 10px rgba(255, 255, 255, 1),
@@ -261,14 +261,18 @@ main {
   text-transform: uppercase;
   color:#D5A194;
   font-size: 1.5em;
-}
+}*/
 .service-box-content{
   margin: 1.5em 0;
-  text-align: center;
   color:#999;
   line-height: 1.5em;
   font-size: 1.1em;
 }
+.service-box ul {
+  padding-inline-start: 3em;
+}
+
+/*
 .service-box-button{
   display: block;
   text-align: center;
@@ -286,7 +290,7 @@ main {
 }
 .service-box-button a:hover{
   box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 2px 2px 5px rgba(0, 0, 0, 0.15);
-}
+}*/
 /* CONTACT STYLES */
 /* SIDE STYLES - color palatte: D5BBB2, bdbdbd, A56E60*/
 aside {
@@ -305,7 +309,7 @@ aside .heading {
 }
 aside .row {
   margin: 1em auto;
-  float: left
+  float: left;
   text-align: center;
 }
 .btn i {
