@@ -233,16 +233,14 @@ aside a {
   position: relative;
   padding: 1.5em 1em;
 }
-.media-card-title h2 {
+.media-card-title a h2 {
   font-size: 1em;
   font-weight: bold;
   color:#D5A194;
   text-transform: uppercase;
-}
-
-.media-card-title a {
   list-style: none;
 }
+
 .media-card-meta-date {
   position: absolute;
   top: 50%;
