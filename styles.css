@@ -91,7 +91,7 @@ nav ul {
 /* MAIN STYLES */
 main {
   float:left;
-  width: 85%;
+  width: 80%;
 }
 /* INTRO STYLES */
 /* ABOUT STYLES */
@@ -152,7 +152,7 @@ aside {
   background-color: #D5A194;
   display: flex;
   float:right;
-  width:15%;
+  width:20%;
   align-items: center;
   /*justify-content: center;*/
   flex-direction: column;
