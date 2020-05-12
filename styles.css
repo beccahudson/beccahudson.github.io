@@ -67,7 +67,7 @@ body {
 }
 .heading{
   font-size: 2em;
-  color:#727272;
+  color:#eee;
   text-transform: uppercase;
   text-align: center;
 }
@@ -305,7 +305,7 @@ main {
 /* SIDE STYLES - color palatte: D5BBB2, bdbdbd, A56E60*/
 aside {
   background: #003d75;
-  color: #e4e4e4;
+  color: #eee;
   display: flex;
   float:right;
   width:20%;
@@ -332,7 +332,7 @@ aside .row {
 .btn i {
   font-size: 40px;
   transition: all 400ms;
-  color: #555;
+  color: #9bcaf5;
 }
 .btn:hover i {
   transform: scale(0.96);
@@ -387,20 +387,20 @@ aside .row {
 }
 .media-card-content {
   padding: 0em 1em;
-  color:#727272;
+  color:#eee;
 }
 .media-card-button {
   padding: 0 1em 1.5em 1em;
   text-align: center;
 }
-.media-card-button .btn {
-  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
-  color: #bdbdbd;
-  background: none;
-  padding: 1em;
-  text-transform: uppercase;
-  font-weight: 500;
-  height: auto;
-  width: auto;
+.media-card-button .btn {display: inline-block;
+    box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
+    color: #eee;
+    background: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: auto;
+    width: auto;
 }
 /* FOOTER STYLES */
