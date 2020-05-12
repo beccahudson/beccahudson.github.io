@@ -216,6 +216,21 @@ main {
   line-height: 1.5em;
   font-size: 1.1em;
 }
+.concept-button{
+  display: block;
+  text-align: center;
+}
+.concept-button .btn {
+  display: inline-block;
+  box-shadow: 5px 5px 10px #969696, -5px -5px 10px #e4e4e4;
+  color: #bdbdbd;
+  background: none;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  height: auto;
+  width: auto;
+}
 /* SERVICES STYLES */
 .service-box{
   margin: 3em auto;
