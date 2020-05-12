@@ -81,13 +81,12 @@ header {
   background: #f2f2f2;
 }
 h1 {
-  color: #525252 !important;
-  font-size: 8em;
+  color: #f2f2f2 !important;
+  font-size: 5em;
   font-weight: bold;
   font-family: sans-serif;
   text-transform: uppercase;
-  text-shadow: -6px 6px 15px rgba(165,110,96,0.5),
-               6px -6px 15px rgba(213,187,178,0.8);
+  text-shadow: -6px 6px 15px #999, 6px -6px 15px #fff;
   position: relative;
 }
 /* NAV STYLES */
