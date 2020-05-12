@@ -41,7 +41,7 @@ h2 {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  color:#D5A194;
+  color:#fff;
   font-size: 1.5em;
 }
 a, a:-webkit-any-link {
@@ -50,7 +50,7 @@ a, a:-webkit-any-link {
 }
 p {
   text-align: center;
-  color: #727272;
+  color: #eee;
   line-height: 1.5em;
   font-size: 1.1em;
 }
@@ -62,7 +62,8 @@ hr {
 }
 body {
   float:left;
-  background: #bdbdbd;
+  background: #003d75;  
+  color: #555;
 }
 .heading{
   font-size: 2em;
@@ -92,10 +93,6 @@ body {
   margin: 1em;
   flex: auto;
 }
-main {
-  background-image: #f2f2f2 url("blue1010.jpg") no-repeat center center;
-  background-size: cover;
-}
 .btn-container {
   display: inline-flex;
 }
@@ -110,13 +107,13 @@ main {
   justify-content: center;
   cursor: pointer;
   transition: all 400ms;
-  background: #bdbdbd;
-  box-shadow:  5px 5px 10px #969696,
-               -5px -5px 10px #e4e4e4;
+  background: #003d75;
+  box-shadow:  5px 5px 10px #00101f,
+              -5px -5px 10px #0069ca;
 }
 .btn:hover {
-  box-shadow: inset 5px 5px 10px #969696,
-              inset -5px -5px 10px #e4e4e4;
+  box-shadow: inset 5px 5px 10px #00101f,
+              inset -5px -5px 10px #0069ca;
   transform: translatey(2px);
 }
 .overlay {
@@ -160,7 +157,9 @@ nav ul {
 main {
   float:left;
   width: 80%;
-  background: #f2f2f2;
+  /*background: #f2f2f2;*/
+  background-image: #f2f2f2 url("blue1010.jpg") no-repeat center center;
+  background-size: cover;
 }
 /* INTRO STYLES */
 .intro-box {
