@@ -121,7 +121,7 @@ main {
   font-size: 1.5em;
 }
 .intro-content{
-  margin: 1.5em 0;
+  margin: auto;
   text-align: center;
   color:#999;
   line-height: 1.5em;
