@@ -62,7 +62,7 @@ hr {
 }
 body {
   float:left;
-  background: #003d75;  
+  background: #003d75;
   color: #555;
 }
 .heading{
@@ -157,8 +157,7 @@ nav ul {
 main {
   float:left;
   width: 80%;
-  /*background: #f2f2f2;*/
-  background-image: #f2f2f2 url("blue1010.jpg") no-repeat center center;
+  background: #f2f2f2;
   background-size: cover;
 }
 /* INTRO STYLES */
@@ -170,6 +169,7 @@ main {
   border-radius: .5em;
   width: 80%;
   text-align: center;
+  background: #003d75;
 }
 .intro-box img {
   height: 150px;
@@ -195,6 +195,7 @@ main {
   padding: 1em 3em;
   border-radius: .5em;
   width: 80%;
+  background: #003d75;
 }
 .about .heading {
   color: #D5A194;
@@ -215,6 +216,7 @@ main {
               0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 1em 3em;
   border-radius: .5em;
+  background: #003d75;
 }
 .concept-img img {
   display: block;
@@ -305,7 +307,7 @@ main {
 /* CONTACT STYLES */
 /* SIDE STYLES - color palatte: D5BBB2, bdbdbd, A56E60*/
 aside {
-  background-color: #bdbdbd;
+  background: #003d75;
   color: #555;
   display: flex;
   float:right;
@@ -345,6 +347,7 @@ aside .row {
               0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: .5em;
   transition: box-shadow .3s ease;
+  background: #003d75;
 }
 .media-card:hover {
   cursor: pointer;
@@ -390,18 +393,18 @@ aside .row {
   color:#727272;
 }
 .media-card-button {
-  padding: 1.5em 1em;
+  padding: 0 1em 1.5em 1em;
+  text-align: center;
 }
-.media-card-button a {
-  border-radius: .5em;
-  text-decoration: none;
-  //text-transform: uppercase;
+.media-card-button {
   display: inline-block;
-  //box-shadow:0px -6px 10px rgba(255, 255, 255, 1), 0px 4px 15px rgba(0, 0, 0, 0.15);
-  //padding: .7em;
-  font-style: italic;
-  color:#D5A194;
+  box-shadow: 5px 5px 10px #969696, -5px -5px 10px #e4e4e4;
+  color: #bdbdbd;
+  background: none;
+  padding: 1em;
+  text-transform: uppercase;
   font-weight: 500;
-  font-size: 1em
+  height: auto;
+  width: auto;
 }
 /* FOOTER STYLES */
