@@ -296,11 +296,12 @@ aside {
   margin: 0;
 }
 aside .heading {
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
 }
-aside row {
+aside .row {
   margin: 1em auto;
-  float: left;
+  float: left
+  text-align: center;
 }
 .btn i {
   font-size: 40px;
