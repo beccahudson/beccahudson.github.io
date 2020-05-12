@@ -232,13 +232,13 @@ aside a {
 .media-card-title {
   position: relative;
   padding: 1.5em 1em;
+  list-style: none;
 }
 .media-card-title a h2 {
   font-size: 1em;
   font-weight: bold;
   color:#D5A194;
   text-transform: uppercase;
-  list-style: none;
 }
 
 .media-card-meta-date {
