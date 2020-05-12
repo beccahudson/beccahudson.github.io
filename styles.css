@@ -163,8 +163,7 @@ main {
 /* INTRO STYLES */
 .intro-box {
   margin: 0 auto 3em auto;
-  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1),
-              0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px -6px 10px rgb(208, 205, 205), 5px 4px 15px rgba(0, 0, 0, 0.42);
   padding: 1em 3em;
   border-radius: .5em;
   width: 80%;
@@ -175,8 +174,8 @@ main {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: -10px -6px 10px #f5f5f5, 0px 4px 15px #727272;
+  border: 3px solid #003d75;
+    box-shadow: 15px 15px 10px #00101f, -15px -15px 10px #0069ca;
 }
 .intro-content{
   margin: auto;
@@ -190,8 +189,7 @@ main {
 /* ABOUT STYLES */
 .about-box {
   margin: 3em auto;
-  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1),
-              0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px -6px 10px rgb(208, 205, 205), 5px 4px 15px rgba(0, 0, 0, 0.42);
   padding: 1em 3em;
   border-radius: .5em;
   width: 80%;
@@ -212,8 +210,7 @@ main {
 /* PROJECT-IDEAS STYLES */
 .concept-box {
   margin: 3em auto;
-  box-shadow: 0px -6px 10px rgba(255, 255, 255, 1),
-              0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px -6px 10px rgb(208, 205, 205), 5px 4px 15px rgba(0, 0, 0, 0.42);
   padding: 1em 3em;
   border-radius: .5em;
   background: #003d75;
@@ -227,7 +224,7 @@ main {
 .concept-content{
   margin: 1.5em 0;
   text-align: center;
-  color:#727272;
+  color:#eee;
   line-height: 1.5em;
   font-size: 1.1em;
 }
@@ -237,9 +234,8 @@ main {
 }
 .concept-button .btn {
   display: inline-block;
-  box-shadow: 5px 5px 10px #00101f,
-              -5px -5px 10px #0069ca;
-  color: #bdbdbd;
+  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
+  color: #7dbbf5;
   background: none;
   padding: 1em;
   text-transform: uppercase;
@@ -274,7 +270,7 @@ main {
   font-size: 1.5em;
 }*/
 .service-box-content{
-  color: #727272;
+  color: #e4e4e4;
   line-height: 1.5em;
   font-size: 1.1em;
 }
@@ -309,7 +305,7 @@ main {
 /* SIDE STYLES - color palatte: D5BBB2, bdbdbd, A56E60*/
 aside {
   background: #003d75;
-  color: #555;
+  color: #e4e4e4;
   display: flex;
   float:right;
   width:20%;
@@ -344,8 +340,7 @@ aside .row {
 /* PORTFOLIO STYLES */
 .media-card {
   margin: 3em auto;
-  box-shadow: 5px 5px 10px #00101f,
-              -5px -5px 10px #0069ca;
+  box-shadow: 5px -6px 10px rgb(208, 205, 205), 5px 4px 15px rgba(0, 0, 0, 0.42);
   border-radius: .5em;
   transition: box-shadow .3s ease;
   background: #003d75;
@@ -377,7 +372,7 @@ aside .row {
 .media-card-title h2 a {
   font-size: 1em;
   font-weight: bold;
-  color:#D5A194;
+  color:#eee;
   text-transform: uppercase;
 }
 
@@ -398,9 +393,8 @@ aside .row {
   padding: 0 1em 1.5em 1em;
   text-align: center;
 }
-.media-card-button {
-  display: inline-block;
-  box-shadow: 5px 5px 10px #969696, -5px -5px 10px #e4e4e4;
+.media-card-button .btn {
+  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
   color: #bdbdbd;
   background: none;
   padding: 1em;
