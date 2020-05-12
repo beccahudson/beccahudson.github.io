@@ -58,7 +58,7 @@ ul {
   padding-inline-start: 0;
 }
 hr {
-  border-top: 0.5px solid rgba(153,153,153, 0.2);
+  border-top: 0.5px solid rgba(153,153,153, 0.7);
 }
 body {
   float:left;
@@ -92,6 +92,10 @@ body {
   margin: 1em;
   flex: auto;
 }
+main {
+  background-image: #f2f2f2 url("blue1010.jpg") no-repeat center center;
+  background-size: cover;
+}
 .btn-container {
   display: inline-flex;
 }
@@ -114,6 +118,15 @@ body {
   box-shadow: inset 5px 5px 10px #969696,
               inset -5px -5px 10px #e4e4e4;
   transform: translatey(2px);
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(70, 70, 70, .5);
+  z-index: 1;
 }
 /* HEADER STYLES */
 header {
@@ -164,7 +177,7 @@ main {
   width: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  box-shadow: -10px -6px 10px #fff, 0px 4px 15px #727272;
+  box-shadow: -10px -6px 10px #f5f5f5, 0px 4px 15px #727272;
 }
 .intro-content{
   margin: auto;
@@ -294,6 +307,7 @@ main {
 /* SIDE STYLES - color palatte: D5BBB2, bdbdbd, A56E60*/
 aside {
   background-color: #bdbdbd;
+  color: #555;
   display: flex;
   float:right;
   width:20%;
@@ -319,8 +333,8 @@ aside .row {
 }
 .btn i {
   font-size: 40px;
-  color: #727272;
   transition: all 400ms;
+  color: #555;
 }
 .btn:hover i {
   transform: scale(0.96);
