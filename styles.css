@@ -11,7 +11,7 @@ navy- #041F3D
 rose gold- #CD8D81
 rose gold gradient link- https://www.colorzilla.com/gradient-editor/#cd8561+0,e1ac8f+25,f2d4c3+50,e1ac8f+75,cd8561+100
 
-
+@ media all and (min-width: px) {}
 
 Styles Order:
 
@@ -30,6 +30,12 @@ FOOTER STYLES
 */
 
 /* GLOBAL STYLES */
+.group {
+  display: flex;
+  flex-direction: column (or row);
+}
+
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
