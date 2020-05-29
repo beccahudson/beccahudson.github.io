@@ -27,6 +27,9 @@ FOOTER STYLES
     border: 1px solid red;
   }
   /* FLEXBOX FORMAT */
+  .hidden {
+    display: none;
+  }
   .wrapper {
     margin: 1.5em;
     box-shadow: 5px -6px 10px rgb(208, 205, 205), 
@@ -151,3 +154,23 @@ FOOTER STYLES
     box-shadow: 5px 5px 10px #0069ca, 
                -5px -5px 10px #0069ca;
   } 
+
+  /* CONTACT STYLES */
+  form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: arial;
+  }
+  form input[type=text] {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  form textarea {
+    height: 4.75rem;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
