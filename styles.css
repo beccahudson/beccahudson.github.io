@@ -307,7 +307,6 @@ main {
 .service-box-button a:hover{
   box-shadow: -2px -2px 5px rgba(255, 255, 255, 1), 2px 2px 5px rgba(0, 0, 0, 0.15);
 }*/
-/* CONTACT STYLES */
 /* SIDE STYLES - color palatte: D5BBB2, bdbdbd, A56E60*/
 aside {
   background: #003d75;
@@ -342,6 +341,27 @@ aside .row {
 }
 .btn:hover i {
   transform: scale(0.96);
+}
+/* CONTACT STYLES */
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: arial;
+}
+form input {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+form textarea {
+  height: 4.75rem;
+  width: 75%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background-color: #003d75;
+  border-bottom: none;
 }
 /* PORTFOLIO STYLES */
 .media-card {
