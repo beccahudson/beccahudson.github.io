@@ -24,7 +24,7 @@ FOOTER STYLES
 
 /****** GLOBAL STYLES ******/
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   /* FLEXBOX FORMAT */
   .hidden {
@@ -63,6 +63,16 @@ FOOTER STYLES
   .item-double {
     flex: 2;
     margin: 10px;
+    text-align: center;
+    color: #f2f2f2;
+    line-height: 1.25em;
+  }
+  .item-triple {
+    flex: 3;
+    margin: 10px;
+    text-align: center;
+    color: #f2f2f2;
+    line-height: 1.25em;
   }
 
   
@@ -78,22 +88,23 @@ FOOTER STYLES
   }
   hr {
     border-top: 0.5px solid rgba(153,153,153, 0.7);
+    margin: 1em auto;
   }
   body {
-    background: #003d75;
+    background: #f2f2f2;
     color: #555;
+    width: 100%;
   }
   main {
     display: flex;
     /* width: 80%; */
-    background: #f2f2f2;
     margin: auto;
   }
   
   main h1 {
     margin: 0 10px;
     text-align: center;
-    font-size: 65px;
+    font-size: 10vw;
   }
   
   main h2 {
@@ -102,14 +113,14 @@ FOOTER STYLES
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    font-size: 1.5em;
     margin: 18px 0 12px 0;
-    font-size: 24px;
+    font-size: 6vw;
+    line-height: 1.5em;
   }
   main h3 {
     margin: 18px 0 12px 0;
-    border-bottom: 1px solid #5c4f41;
-    font-size: 18px;
+    font-size: 4vw;
+    line-height: normal;
   }
   section p {
     color: #eee;
@@ -117,9 +128,40 @@ FOOTER STYLES
   img {
     width: 100%;  
   }
+  .btn {
+    width: 10vw;
+    text-decoration: none;
+    height: 35px;
+    /* width: 40px; */
+    margin: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 400ms;
+    background: #003d75;
+    box-shadow: 5px 5px 10px #00101f,
+               -5px -5px 10px #0069ca;
+  }
+  .btn i {
+    font-size: 6vw;
+    transition: all 400ms;
+    color: #9bcaf5;
+  }
   
 /****** SECTION STYLES ******/
-
+section .btn {
+  display: inline-block;
+    box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
+    color: #7dbbf5;
+    background: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: auto;
+    width: auto;
+  }
  /* HEADER STYLES */
  header {
     margin: 0;
@@ -130,9 +172,9 @@ FOOTER STYLES
     background: #f2f2f2;
     /* width: 80%;*/
    }
-   header h1{
+   header h1 {
     color: #0069ca !important;
-    font-size: 2em;
+    font-size: 10vw;
     /* font-weight: bold; */
     /* font-family: sans-serif; */
     /* text-transform: uppercase; */
@@ -144,16 +186,57 @@ FOOTER STYLES
   #intro h2 {
     border: none;
   }
-  .intro-wrapper {
-  }
   .intro-box img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 6px solid #003d75;
+    border: 2px solid #003d75;
     box-shadow: 5px 5px 10px #0069ca, 
                -5px -5px 10px #0069ca;
   } 
+
+  /* CONCEPTS STYLES */
+  .concepts-box img {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    margin: 1.5em auto;
+  }
+  .concept-button {
+    margin: 1.5em;
+  }
+
+  /* PORTFOLIO STYLES */
+  .portfolio-box h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .portfolio-box h2 a {
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1em;
+    margin: 10px 0 10px 0;
+    font-size: 6vw;
+    line-height: 1.5em;
+  }
+  .portfolio-box img {
+    border: 1px solid #000;
+    margin: 1.5em auto;
+  }
+
+  /* SERVICES STYLES */
+  .services-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .services-box ul li {
+    margin: 0 auto 1em auto;
+  }
 
   /* CONTACT STYLES */
   form label {
@@ -163,14 +246,147 @@ FOOTER STYLES
     font-family: arial;
   }
   form input[type=text] {
+    height: 1.5em;
+    width: 90%;
     color: #000;
     font-size: 16px;
-    margin-bottom: 20px;
+    background-color: #9bcaf5;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: -3px -3px 5px #00101f,
+                 3px 3px 5px #00101f; 
+    border: 3px outset #1C6EA4;
+
   }
   form textarea {
     height: 4.75rem;
-    width: 100%;
+    width: 90%;
     color: #000;
     font-size: 16px;
+    background-color: #9bcaf5;
     margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 5px #00101f,
+                 3px 3px 5px #00101f; 
+    border: 3px outset #1C6EA4;
+  }
+  form button[type=submit] {
+    display: inline-block;
+    box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
+    color: #7dbbf5;
+    background: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: auto;
+    width: auto;
+    border: none;
+  }
+
+  /* SOCIAL STYLES */
+  footer {
+    display: flex;
+    background-color: #003d75;
+    text-align: center;
+    padding: 2em 0;
+  }
+  .social-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  footer .group {
+    width: auto;
+  }
+  footer .btn-container {
+    display: inline-flex;
+    margin-bottom: 2em;
+  }
+
+  /* TABLET-2ND-(min-width: 426px) */
+  @media all and (min-width: 426px) {
+    .item {
+      width: 75%;
+    }
+    .btn {
+      height: 10vw;
+      width: 10vw;
+    }
+    .btn i {
+      font-size: 8vw;
+    }
+    
+  }
+  /* LAPTOP-3RD-(min-width: 769px) */
+  @media all and (min-width: 769px) {
+    main h3 {
+      font-size: 2.5vw;
+    }
+    .btn {
+      height: 7vw;
+      width: 7vw;
+    }
+    .btn i {
+      font-size: 5vw;
+    }
+    .wrapper {
+      width: 90%;
+      margin: 3em auto;
+    }
+    #concepts .group, #portfolio .group {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .item {
+      margin: 1em auto;
+    }
+    .concepts-box .items {
+      width: 30%;
+    }
+    .concepts-box h2 {
+      font-size: 3vw;
+    }
+    .concepts-box img {
+      width: 20vw;
+    }
+    .portfolio-box h2 a {
+      font-size: 3vw;
+    }
+    .media-card-button {
+      font-size: 1.75vw;
+    }
+    footer {
+      padding: 2em;
+    }
+  }
+  /* DESKTOP-4TH-(min-width: 1025 px) */
+  @media all and (min-width: 1025px) {
+    main {
+      display: block;
+    }
+    .wrapper {
+      width: 80%;
+      margin: 3em auto;
+    }
+    header h1 {
+      font-size: 6em;
+    }
+    main h2 {
+      font-size: 3vw;
+    }
+    main h3 {
+      font-size: 2vw;
+    }
+    .concepts-box h2 {
+      font-size: 2vw;
+    }
+    .media-card-button {
+      font-size: 1.25vw;
+    }
+    .btn {
+      height: 4vw;
+      width: 4vw;
+    }
+    .btn i {
+      font-size: 3vw;
+    }
   }
