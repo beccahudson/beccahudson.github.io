@@ -38,7 +38,7 @@ FOOTER STYLES
     border-radius: .5em;
     /* width: 80%; */
     text-align: center;
-    background: #003d75;
+    background: #0040C8;
   }
   .group {
     max-width: 1440px;
@@ -91,7 +91,7 @@ FOOTER STYLES
     margin: 1em auto;
   }
   body {
-    background: #f2f2f2;
+    background: #f2f2f2 url('bg-1680x1050.jpg');
     color: #555;
     width: 100%;
   }
@@ -140,7 +140,7 @@ FOOTER STYLES
     justify-content: center;
     cursor: pointer;
     transition: all 400ms;
-    background: #003d75;
+    background: #0040C8;
     box-shadow: 5px 5px 10px #00101f,
                -5px -5px 10px #0069ca;
   }
@@ -169,7 +169,7 @@ section .btn {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    background: #f2f2f2;
+    background: #0040C8;
     /* width: 80%;*/
    }
    header h1 {
@@ -179,7 +179,9 @@ section .btn {
     /* font-family: sans-serif; */
     /* text-transform: uppercase; */
     /* text-shadow: -6px 6px 15px rgba(0, 0, 0, 0.55); */
-    text-shadow: -3px 3px 7px rgba(0, 0, 0, 0.55);
+    /* text-shadow: -3px 3px 7px rgba(0, 0, 0, 0.55); */
+    text-shadow: 5px 5px 10px #00101f,
+               -3px -3px 5px #449ff4;
   }
   
   /* INTRO STYLES */
@@ -286,7 +288,7 @@ section .btn {
   /* SOCIAL STYLES */
   footer {
     display: flex;
-    background-color: #003d75;
+    background-color: #0040C8;
     text-align: center;
     padding: 2em 0;
   }
@@ -376,6 +378,9 @@ section .btn {
     main h3 {
       font-size: 2vw;
     }
+    section p .services-box ul li {
+      font-size: 1.25em;
+    }
     .concepts-box h2 {
       font-size: 2vw;
     }
@@ -388,5 +393,16 @@ section .btn {
     }
     .btn i {
       font-size: 3vw;
+    }
+    form button[type=submit] {
+      display: flex;
+      margin: auto;
+    }
+    form input[type=text] {
+      height: 2em;
+      width: 50%;
+    }
+    form textarea {
+      width: 50%;
     }
   }
