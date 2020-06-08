@@ -32,8 +32,8 @@ FOOTER STYLES
   }
   .wrapper {
     margin: 1.5em;
-    box-shadow: 5px -6px 10px rgb(208, 205, 205), 
-                5px 4px 15px rgba(0, 0, 0, 0.42);
+    box-shadow: 5px 5px 5px #00101f,
+               -3px -3px 5px #a6d3fd;
     padding: 1em;
     border-radius: .5em;
     /* width: 80%; */
@@ -144,6 +144,11 @@ FOOTER STYLES
     box-shadow: 5px 5px 10px #00101f,
                -5px -5px 10px #0069ca;
   }
+  .btn:hover {
+    box-shadow: inset 5px 5px 10px #00101f,
+                inset -5px -5px 10px #0069ca;
+    transform: translatey(2px);
+  }
   .btn i {
     font-size: 6vw;
     transition: all 400ms;
@@ -175,13 +180,8 @@ section .btn {
    header h1 {
     color: #0069ca !important;
     font-size: 10vw;
-    /* font-weight: bold; */
-    /* font-family: sans-serif; */
-    /* text-transform: uppercase; */
-    /* text-shadow: -6px 6px 15px rgba(0, 0, 0, 0.55); */
-    /* text-shadow: -3px 3px 7px rgba(0, 0, 0, 0.55); */
-    text-shadow: 5px 5px 10px #00101f,
-               -3px -3px 5px #449ff4;
+    text-shadow: 3px 3px 5px #00101f,
+               -1.5px -1.5px 3px #a6d3fd;
   }
   
   /* INTRO STYLES */
@@ -193,8 +193,8 @@ section .btn {
     width: 150px;
     border-radius: 50%;
     border: 2px solid #003d75;
-    box-shadow: 5px 5px 10px #0069ca, 
-               -5px -5px 10px #0069ca;
+    box-shadow: 5px 5px 10px #00101f, 
+               -3px -3px 5px #a6d3fd;
   } 
 
   /* CONCEPTS STYLES */
@@ -306,6 +306,10 @@ section .btn {
 
   /* TABLET-2ND-(min-width: 426px) */
   @media all and (min-width: 426px) {
+    .wrapper {
+      box-shadow: 5px 5px 10px #00101f,
+                 -5px -5px 5px #a6d3fd;
+    }
     .item {
       width: 75%;
     }
@@ -316,7 +320,10 @@ section .btn {
     .btn i {
       font-size: 8vw;
     }
-    
+    header h1 {
+      text-shadow: 5px 5px 10px #00101f,
+                  -3px -3px 5px #a6d3fd;
+    }
   }
   /* LAPTOP-3RD-(min-width: 769px) */
   @media all and (min-width: 769px) {
