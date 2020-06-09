@@ -167,7 +167,7 @@ section .btn {
     display: flex;
     justify-content: center;
     background: #0040C8;    
-    text-shadow: 3px 3px 5px #00101f,
+    box-shadow: 3px 3px 5px #00101f,
                 -1.5px -1.5px 3px #a6d3fd;
    }
    header h1 {
