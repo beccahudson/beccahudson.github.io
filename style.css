@@ -284,6 +284,8 @@ section .btn {
     background-color: #0040C8;
     text-align: center;
     padding: 2em 0;
+    box-shadow: 5px 5px 10px #00101f,
+                -3px -3px 5px #a6d3fd;
   }
   .social-wrapper {
     flex-direction: row;
