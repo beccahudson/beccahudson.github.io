@@ -44,21 +44,15 @@ FOOTER STYLES
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    /* justify-content: space-between; */
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 100px; */
   }
   .item {
     flex: 1;
-    /* margin: 10px; */
     margin: auto;
     text-align: center;
     color: #f2f2f2;
     line-height: 1.25em;
-    /* line-height: 1.5em; */
-    /* font-size: 1.1em; */
-    /* width: 50%; */
   }
   .item-double {
     flex: 2;
@@ -170,12 +164,11 @@ section .btn {
  /* HEADER STYLES */
  header {
     margin: 0;
-    /* height: 200px; */
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-    background: #0040C8;
-    /* width: 80%;*/
+    background: #0040C8;    
+    text-shadow: 3px 3px 5px #00101f,
+                -1.5px -1.5px 3px #a6d3fd;
    }
    header h1 {
     color: #0069ca !important;
