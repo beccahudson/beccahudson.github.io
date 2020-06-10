@@ -173,6 +173,7 @@ section .btn {
    header h1 {
     color: #0069ca !important;
     font-size: 10vw;
+    text-align: center;
     text-shadow: 3px 3px 5px #00101f,
                -1.5px -1.5px 3px #a6d3fd;
   }
