@@ -2,7 +2,6 @@
 IMPORTS 
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poiret One', cursive;
-font-family: 'Raleway Dots', cursive;
 */
 
 /****** GLOBAL STYLES ******/
@@ -39,13 +38,13 @@ html {
   display: none;
 }
 .wrapper {
-  margin: 1em;
+  margin: 1em auto;
   box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #00101f;
   padding: 1em;
   border-radius: 0.5em;
   text-align: center;
-  background: #10114b;
-  width: min-content;
+  background: rgba(0, 0, 0, 0.9);
+  width: 80%;
   font-size: 16px;
 }
 .group {
@@ -54,6 +53,9 @@ html {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+.row {
+  flex-direction: row;
 }
 .item {
   flex: 1;
@@ -80,7 +82,7 @@ html {
   color: rgba(0, 255, 255, 0.75) !important;
 }
 .purple {
-  color: rgba(165, 0, 253, 1) !important;
+  color: rgba(102, 32, 234, 1) !important;
 }
 .magenta {
   color: rgba(213, 0, 250, 0.75) !important;
@@ -108,7 +110,7 @@ p {
   margin-top: 0;
 }
 hr {
-  border-top: 0.5px solid rgba(153, 153, 153, 0.7);
+  border: 0.5px solid rgb(167 36 251);
   margin: 1em auto;
 }
 
@@ -122,7 +124,9 @@ main {
   /* width: 80%; */
   margin: auto;
 }
-
+.main-wrapper {
+  width: 100%;
+}
 main h1 {
   margin: 0 10px;
   text-align: center;
@@ -144,6 +148,12 @@ main h3 {
   font-size: 4vw;
   line-height: normal;
 }
+.section-header {
+  display: inline-flex;
+  border-bottom: 2px solid rgb(167 36 251);
+  margin: 1em auto;
+  padding-bottom: 5%;
+}
 section p {
   color: #eee;
 }
@@ -162,23 +172,27 @@ img {
   cursor: pointer;
   transition: all 400ms;
   background: #10114b;
-  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #00101f;
+  /* box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #00101f; */
+  box-shadow: 0.1px 0.1px 5px rgba(2, 223, 248, 0.5),
+    -0.1px -0.1px 15px rgba(2, 223, 248, 0.5);
 }
 .btn:hover {
-  box-shadow: inset 5px 5px 10px #00101f, inset -5px -5px 10px #00101f;
+  box-shadow: inset 0.1px 0.1px 5px rgba(2, 223, 248, 0.5),
+    inset -0.1px -0.1px 15px rgba(2, 223, 248, 0.5);
   transform: translatey(2px);
 }
 .btn i {
   font-size: 6vw;
   transition: all 400ms;
-  color: #9bcaf5;
+  color: #0ec0c3;
 }
 
 /****** SECTION STYLES ******/
 section .btn {
   display: inline-block;
-  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #00101f;
-  color: #7dbbf5;
+  box-shadow: 0.1px 0.1px 5px rgba(2, 223, 248, 0.5),
+    -0.1px -0.1px 15px rgba(2, 223, 248, 0.5);
+  color: #0ec0c3;
   background: none;
   padding: 1em;
   text-transform: uppercase;
@@ -189,9 +203,9 @@ section .btn {
 /* HEADER STYLES */
 header {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
-  position: fixed;
+  /* position: fixed; */
 }
 header .font-container {
   margin: 50px auto;
@@ -204,7 +218,8 @@ header h1 {
   color: #01e5ff !important;
   font-size: 10vw;
   text-align: center;
-  text-shadow: 3px 3px 3px #000d19, -1.5px -1.5px 3px #a6d3fd;
+  text-shadow: 2.5px 2.5px 50px #00101f,
+    -0.1px -0.1px 50px rgba(2, 223, 248, 0.5);
 }
 header h2 {
   font-family: "Montserrat", sans-serif;
@@ -220,14 +235,16 @@ header h2 {
   border: none;
 }
 .intro-box img {
-  height: 150px;
-  width: 150px;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 50%;
-  border: 2px solid #00084b;
-  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
+  box-shadow: 0.1px 0.1px 50px rgba(2, 223, 248, 0.5),
+    -0.1px -0.1px 50px rgba(2, 223, 248, 0.5);
 }
-
-/* CONCEPTS STYLES */
+.greater,
+.lesser {
+  display: none;
+}
 .concepts-box img {
   display: inline-flex;
   text-align: center;
@@ -235,7 +252,7 @@ header h2 {
   margin: 1.5em auto;
 }
 .concept-button {
-  margin: 1.5em;
+  margin: 1.5em 0;
 }
 
 /* PORTFOLIO STYLES */
@@ -278,32 +295,38 @@ form label {
   margin-bottom: 5px;
   font-family: arial;
 }
+form textarea,
 form input[type="text"] {
   height: 1.5em;
   width: 90%;
   color: #000;
   font-size: 16px;
-  background-color: #9bcaf5;
+  background-color: #81c9ca;
   margin: 20px auto;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
-  border: 3px outset #1c6ea4;
+  /* box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca; */
+  border: 3px outset #0ec0c3;
+}
+input:focus,
+textarea:focus {
+  outline: 1px auto #f2f2f2;
 }
 form textarea {
   height: 4.75rem;
   width: 90%;
   color: #000;
   font-size: 16px;
-  background-color: #9bcaf5;
+  background-color: #81c9ca;
   margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
-  border: 3px outset #1c6ea4;
+  /* box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca; */
+  border: 3px outset #0ec0c3;
 }
 form button[type="submit"] {
   display: inline-block;
-  box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca;
-  color: #7dbbf5;
+  box-shadow: 0.1px 0.1px 5px rgba(2, 223, 248, 0.5),
+    -0.1px -0.1px 15px rgba(2, 223, 248, 0.5);
+  color: #0ec0c3;
   background: none;
   padding: 1em;
   text-transform: uppercase;
@@ -315,13 +338,16 @@ form button[type="submit"] {
 
 /* SOCIAL STYLES */
 footer {
-  position: fixed;
-  left: 0;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
   display: grid;
   text-align: center;
   padding: 2em 0;
+}
+#social {
+  top: auto;
+  height: auto;
 }
 .social-wrapper {
   flex-direction: row;
@@ -335,6 +361,9 @@ footer {
 footer .btn-container {
   display: inline-flex;
   margin-bottom: 2em;
+}
+footer .btn {
+  background: transparent;
 }
 
 /* TABLET-2ND-(min-width: 426px) */
@@ -350,11 +379,18 @@ footer .btn-container {
     font-size: 8vw;
   }
   header h1 {
-    text-shadow: 5px 5px 10px #00101f, -3px -3px 5px #a6d3fd;
+    text-shadow: 5px 5px 10px #00101f, -0.1px -0.1px 10px rgba(2, 223, 248, 0.5);
   }
 }
 /* LAPTOP-3RD-(min-width: 769px) */
 @media all and (min-width: 769px) {
+  .greater,
+  .lesser {
+    display: inline-flex;
+    white-space: nowrap;
+    margin: auto !important;
+    justify-content: center;
+  }
   main h3 {
     font-size: 2.5vw;
   }
@@ -393,7 +429,7 @@ footer .btn-container {
     font-size: 1.75vw;
   }
   footer {
-    padding: 2em;
+    /* padding: 2em; */
   }
   footer .footer-meta {
     margin: 1% auto;
