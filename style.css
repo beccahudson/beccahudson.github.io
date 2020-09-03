@@ -16,13 +16,11 @@ html {
 }
 .overlay {
   width: 100%;
-  /* height: 100%; */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  /* z-index: 2; */
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .parallax {
   background-image: url("./images/bg-3000x2000.jpg");
@@ -121,7 +119,6 @@ body {
 }
 main {
   display: flex;
-  /* width: 80%; */
   margin: auto;
 }
 .main-wrapper {
@@ -203,9 +200,7 @@ section .btn {
 /* HEADER STYLES */
 header {
   width: 100%;
-  /* height: 100%; */
   overflow: hidden;
-  /* position: fixed; */
 }
 header .font-container {
   margin: 50px auto;
@@ -304,7 +299,6 @@ form input[type="text"] {
   background-color: #81c9ca;
   margin: 20px auto;
   border-radius: 5px;
-  /* box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca; */
   border: 3px outset #0ec0c3;
 }
 input:focus,
@@ -319,7 +313,6 @@ form textarea {
   background-color: #81c9ca;
   margin-bottom: 20px;
   border-radius: 5px;
-  /* box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #0069ca; */
   border: 3px outset #0ec0c3;
 }
 form button[type="submit"] {
