@@ -21,29 +21,36 @@
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poiret+One&family=Raleway+Dots&display=swap");
     </style>
   </head>
-  <body class="parallax">
+  <body>
     <header class="overlay">
-      <div class="font-container">
-        <h1>REBECCA HUDSON</h1>
-        <h2>Full-stack Developer</h2>
-      </div>
       <!-- <nav class="nav-wrapper">
         <ul class="group">
-              <li class="item">Intro</li>
-              <li class="item">About</li>
-              <li class="item">Ideas</li>
-              <li class="item">Services</li>
-              <li class="item">Contact</li>
-              <li class="item">Portfolio</li>
+          <a href="#about"><li class="item">About</li></a>
+          <a href=""><li class="item">Ideas</li></a>
+          <a href=""><li class="item">Services</li></a>
+          <a href=""><li class="item">Contact</li></a>
+          <a href=""><li class="item">Portfolio</li></a>
         </ul>
       </nav> -->
+      <div id="headerFont" class="fadeOut">
+        <h1>REBECCA HUDSON</h1>
+        <h2>Full-Stack Engineer</h2>
+      </div>
     </header>
     <main>
       <div class="main-wrapper">
-        <section id="intro" class="wrapper">
-          <div class="group intro-box">
+        <section id="parallax">
+          <img src="./images/confetti-bg.png" id="confetti" alt="" />
+          <img src="./images/circles-bg.png" id="circles" alt="" />
+          <!-- <img src="./images/squares-bg.png" id="squares" alt="" /> -->
+        </section>
+
+        <section id="about" class="wrapper">
+          <div class="item section-name">
+            <a href="#about"><h1>Who am I?</h1></a>
+          </div>
+          <div class="group about-box column">
             <div class="item row section-header">
-              <h2 class="hidden">Hi, my name is Rebecca</h2>
               <div class="greater item">
                 <i class="fas fa-angle-double-right fa-3x aqua"></i
                 ><i class="fas fa-angle-double-right fa-3x aqua"></i
@@ -56,83 +63,23 @@
                 ><i class="fas fa-angle-double-left fa-3x aqua"></i>
               </div>
             </div>
-
-            <div class="item">
+            <div class="item section-content">
               <p>
-                Currently, I am a student at Thinkful knee-deep in the
-                Engineering Immersion Program.
-              </p>
-              <p>
-                Most recently I freelanced as a Shopify and Wordpress developer;
-                working directly with designers to bring their clients vision to
-                life.
-              </p>
-              <p>
-                I work remotely from my residence just outside of Orlando, FL.
-                where I was born and raised.
-              </p>
-              <p>
-                I am an insomniac and code best at night, running off a coffee
-                IV drip; while listening to music and getting sucked into a time
-                warp.
-              </p>
-              <p>
-                I'm an introverted extrovert and need a nap after a party of
-                more than 5. I am a nerd (sci-fi, mysteries, future tech...) and
-                I raise my kids as nerds and we are proud of it.
-              </p>
-              <p>
-                I love creating something from nothing, especially if it
-                involves a puzzle.
-              </p>
-              <p>
-                I started coding 5 years ago and haven't stopped. I am a
-                lifelong learner and I don't feel fulfilled unless there's more
-                to know.
+                I'm a motivated full-stack engineer who loves Syfy, mysteries
+                and napping. If coffee IV drips were a thing I would pull it
+                with me everywhere. Give me a puzzle and music and I’m good to
+                go!
               </p>
             </div>
           </div>
         </section>
 
-        <section id="about" class="wrapper">
-          <div class="group about-box">
-            <div class="item">
-              <h2>ABOUT</h2>
-              <hr />
-            </div>
-            <div class="item">
-              <h3>Personal Mission Statement</h3>
-              <p>
-                <em
-                  >To learn any and everything, that is willing to be taught. To
-                  research what I do not know and to pass on what I do. To not
-                  give up, all the while staying positive. To lead by example
-                  and listen before I speak. To think creatively and never from
-                  within a box. Moreover, to promise a handshake filled with
-                  honesty and ethics.</em
-                >
-              </p>
-              <p>
-                Over the past few years, I have worked with several design
-                teams, along with keeping daily contact with clients and their
-                third party personnel.
-              </p>
-              <p>
-                I enjoy working with them because they often bring new and
-                improved ideas that make for a complete project that the client
-                and their audience not only want but thoroughly enjoy.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="services" class="wrapper">
+        <!-- <section id="services" class="wrapper">
           <div class="group services-box">
-            <div class="item">
-              <h2>Services</h2>
-              <hr />
+            <div class="item section-name">
+              <a href="#services"><h1>Services</h1></a>
             </div>
-            <ul class="item">
+            <ul class="item section-content">
               <li>
                 Responsive frontend development with HTML/CSS, React, and
                 JavaScript
@@ -142,11 +89,15 @@
               <li>Mobile development</li>
             </ul>
           </div>
-        </section>
+        </section> -->
 
         <section id="concepts" class="wrapper">
           <div class="group concepts-box">
-            <div class="item-triple">
+            <!-- <div class="item section-name">
+              <h1>Concepts</h1>
+              <hr />
+            </div>
+            <div class="item-triple section-content">
               <img src="images/1.png" alt="Google map concept image" />
               <h2>Google Map Concept</h2>
               <p>
@@ -159,7 +110,7 @@
               </div>
             </div>
 
-            <div class="item-triple">
+            <div class="item-triple section-content">
               <img src="images/2.png" alt="Custom form concept image" />
               <h2>Custom Form Concept</h2>
               <p>
@@ -172,7 +123,7 @@
               </div>
             </div>
 
-            <div class="item-triple">
+            <div class="item-triple section-content">
               <img src="images/5.png" alt="Shoe customizer concept image" />
               <h2>Shoe Customizer Concept</h2>
               <p>
@@ -183,61 +134,94 @@
               <div class="concept-button">
                 <a href="#" class="btn">placeholder</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
 
         <section id="portfolio" class="wrapper">
           <div class="group portfolio-box">
-            <div class="item-triple media-card">
-              <img src="images/presentation2.jpg" alt="blank placeholder" />
-              <h2><a href="">Project 1</a></h2>
-              <div class="media-card-button">
-                <a href="#" class="btn">LIVE</a>
-                <a href="#" class="btn">REPO</a>
+            <div class="item section-name">
+              <a href="#portfolio"><h1>Portfolio</h1></a>
+            </div>
+            <div class="item-triple section-content">
+              <img src="/images/virtual-desk.png" alt="Virtual Desk" />
+              <h2>Virtual Desk</h2>
+              <div class="section-buttons">
+                <a href="https://virtual-desk.vercel.app/" class="btn">LIVE</a>
+                <a
+                  href="https://github.com/beccahudson/rebecca-virtual-desk-client"
+                  class="btn"
+                  >REPO</a
+                >
               </div>
-              <h3>Stack, Placeholder</h3>
-              <p>Project accomplish placeholder.</p>
-              <p>Project audience placeholder.</p>
-              <p>Project purpose placeholder.</p>
+              <h3>PERN, Vercel, Heroku</h3>
+              <p>v1: beta</p>
+              <p>Solo Project</p>
+              <p>
+                Virtual Desk is an app for students to get help more efficiently
+                from a pool of approved resources such as teachers and teacher
+                assistants. Not only will students be able to get help faster,
+                it will also free the teachers from being the only available
+                source for students to seek help.
+              </p>
             </div>
 
-            <div class="item-triple media-card">
-              <img src="images/dashboard.png" alt="blank placeholder" />
-              <h2><a href="">Project 2</a></h2>
-              <div class="media-card-button">
-                <a href="#" class="btn">LIVE</a>
-                <a href="#" class="btn">REPO</a>
+            <div class="item-triple section-content">
+              <img src="/images/french-moi.png" alt="blank placeholder" />
+              <h2>French Moi</h2>
+              <div class="section-buttons">
+                <a
+                  href="https://spaced-repitition-rebecca-seyi.vercel.app/"
+                  class="btn"
+                  >LIVE</a
+                >
+                <a
+                  href="https://github.com/beccahudson/Spaced-Repetition-Rebecca-Seyi"
+                  class="btn"
+                  >REPO</a
+                >
               </div>
-              <h3>Stack, Placeholder</h3>
-              <p>Project accomplish placeholder.</p>
-              <p>Project audience placeholder.</p>
-              <p>Project purpose placeholder.</p>
+              <h3>PERN, Vercel, Heroku</h3>
+              <p>Pair Project</p>
+              <p>
+                French Moi is a spaced repitition language learning app. Using a
+                singly linked list to cycle through questions, showing you words
+                that have been answered incorrectly more often than those
+                answered correctly.
+              </p>
             </div>
 
-            <div class="item-triple media-card">
-              <img src="images/ecommerceApp.jpg" alt="blank placeholder" />
-              <h2><a href="">Project 3</a></h2>
-              <div class="media-card-button">
-                <a href="#" class="btn">LIVE</a>
-                <a href="#" class="btn">REPO</a>
+            <div class="item-triple section-content">
+              <img src="/images/binaural.png" alt="blank placeholder" />
+              <h2>Binaural</h2>
+              <div class="section-buttons">
+                <a href="https://binaural-client.vercel.app/" class="btn"
+                  >LIVE</a
+                >
+                <a
+                  href="https://github.com/thinkful-ei-panda/binaural-client"
+                  class="btn"
+                  >REPO</a
+                >
               </div>
-              <h3>Stack, Placeholder</h3>
-              <p>Project accomplish placeholder.</p>
-              <p>Project audience placeholder.</p>
-              <p>Project purpose placeholder.</p>
+              <h3>PERN, Web Audio API, Canvas, SineWave.js</h3>
+              <p>Team of 6 Project</p>
+              <p>
+                Binaural generates binaural beats and audio visualizations to
+                help users achieve altered states of consciousness.
+              </p>
             </div>
           </div>
         </section>
 
         <section id="contact" class="wrapper">
-          <div class="item row section-header">
+          <!-- <div class="item row section-header">
             <div class="greater item">
               <i class="fas fa-angle-double-right fa-3x aqua"></i
               ><i class="fas fa-angle-double-right fa-3x aqua"></i
               ><i class="fas fa-angle-double-right fa-3x aqua"></i>
             </div>
-            <h2>Contact Me</h2>
+            <h1>Contact Me</h1>
             <div class="lesser item">
               <i class="fas fa-angle-double-left fa-3x aqua"></i
               ><i class="fas fa-angle-double-left fa-3x aqua"></i
@@ -250,7 +234,7 @@
             <label class="hidden">Your message:</label>
             <textarea name="message" placeholder="MESSAGE"></textarea>
             <button type="submit" class="btn">SEND</button>
-          </form>
+          </form> -->
         </section>
       </div>
     </main>
@@ -258,7 +242,7 @@
     <footer id="social" class="overlay">
       <!-- <h2>Follow Me</h2> -->
       <div class="group social-wrapper">
-        <div class="item btn-wrapper">
+        <!-- <div class="item btn-wrapper">
           <a
             href="https://www.linkedin.com/in/rebeccahudson4webdev"
             target="_blank"
@@ -267,24 +251,22 @@
             <i class="fab fa-linkedin aqua"></i>
           </a>
         </div>
-        <!-- item -->
         <div class="item btn-wrapper">
           <a href="https://github.com/beccahudson" target="_blank" class="btn">
             <i class="fab fa-github aqua"></i>
           </a>
         </div>
-        <!-- item -->
         <div class="item btn-wrapper">
           <a href="mailto:rhudson.813@gmail.com" class="btn">
             <i class="fa fa-envelope aqua"></i>
           </a>
-        </div>
-        <!-- item -->
+        </div> -->
       </div>
-      <!-- group -->
       <p class="item footer-meta">
         Email: rhudson.813@gmail.com<br />Designed + Developed by Rebecca Hudson
       </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
