@@ -20,7 +20,9 @@ font-family: 'Poiret One', cursive;
   --all-headers: var(--white, white);
   --p-color: var(--soft-white, ghostwhite);
 }
-
+#concepts .section-button {
+  display: hidden;
+}
 /****** BASE STYLES ******/
 * {
   font-family: var(--base-font, sans-serif);
@@ -87,6 +89,9 @@ span {
 }
 
 /****** GLOBAL CLASSES ******/
+.h1 {
+  font-size: 2em;
+}
 .hidden {
   display: none;
 }
@@ -214,7 +219,7 @@ header {
   background-color: var(--blue-bg);
   box-shadow: 5px 5px 10px #00101f, -5px -5px 10px #00101f;
 }
-header .font-container {
+header .header-container {
   margin: 25px auto;
   padding: 0;
 }
@@ -249,7 +254,7 @@ header h3 {
 .intro-box .section-header {
   border: none;
 }
-#resume .btn {
+#resume-btn .btn {
   margin: 0.5em auto;
 }
 
