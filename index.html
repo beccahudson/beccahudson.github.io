@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rebecca Hudson | Full-stack Engineer</title>
+    <title>Rebecca Hudson | Shopify + Front-end Engineer</title>
     <!--CSS NORMALIZE-->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -25,7 +25,7 @@
     <header>
       <div class="header-container">
         <h1>REBECCA HUDSON</h1>
-        <h3>Full-stack Engineer</h3>
+        <h3>Shopify + Front-end Engineer</h3>
       </div>
     </header>
 
@@ -49,15 +49,18 @@
             </div>
             <div class="item">
               <p>
-                I'm a motivated full-stack engineer who loves Syfy, mysteries,
-                and napping. If coffee IV drips were a thing, I would pull it
-                with me everywhere. Give me a puzzle and music, and I'm good to
-                go!
+                I'm a motivated Shopify and Front-end engineer who loves Syfy,
+                mysteries, modern retro (I think that's a thing) and napping. If
+                coffee IV drips were a thing, hook me up give me a puzzle and
+                music, and I'm good to go!
               </p>
               <p>
-                Most recently, I freelanced as a Shopify and WordPress
-                developer, working directly with designers to bring their
-                clients' vision to life.
+                Most recently, I freelanced as a Shopify developer, working
+                directly with designers to bring their clients' vision to life.
+              </p>
+              <p>
+                I am currently learning how to make Shopify apps using React and
+                anything else that is down that rabbit hole.
               </p>
               <p>
                 I work remotely from my residence outside Orlando, FL, where I
@@ -89,84 +92,169 @@
               ><i class="fas fa-angle-double-left fa-2x aqua"></i>
             </div>
           </div>
-          <div class="group portfolio-box">
-            <div class="item-triple section-card">
-              <img src="/images/virtual-desk.png" alt="Virtual Desk" />
-              <h2>Virtual Desk -in progress</h2>
-              <div class="section-button">
-                <a
-                  href="https://virtual-desk.vercel.app/"
-                  class="btn"
-                  target="_blank"
-                  >&nbsp;LIVE&nbsp;</a
-                >
-                <a
-                  href="https://github.com/beccahudson/rebecca-virtual-desk-client"
-                  class="btn"
-                  target="_blank"
-                  >REPO</a
-                >
-              </div>
-              <h3>PERN, Vercel, Heroku</h3>
-              <p><em>Solo Project</em></p>
-              <p>
-                Virtual Desk is an app for students to get help more efficiently
-                from a pool of approved resources such as teachers, teacher
-                assistants and tutors.
-              </p>
-            </div>
+          <!-- In progress TABS -->
+          <!--
+          <div
+            class="group portfolio-box row"
+            style="min-width: -webkit-fill-available; padding: 50px 50px 0 50px"
+          >
+            <button
+              id="shopify-btn"
+              class="portfolio-tab item-triple defaultActive"
+              onClick="document.getElementById('shopify-btn').classList.add('active');
+                      document.getElementById('shopify').style.display = 'none';"
+              style="
+                background-color: #090840;
+                color: rgba(255, 255, 255, 0.25);
+                border: none;
+                padding: 14px 16px;
+                font-size: 17px;
+                margin: auto 0;
+                border-top: 0.5px solid rgba(1, 254, 255, 0.25);
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+              "
+            >
+              SHOPIFY
+            </button>
+            <button
+              id="pernStack-btn"
+              class="portfolio-tab item-triple"
+              onClick="document.getElementById('pernStack').classList.add('active');
+                      document.getElementById('pernStack-btn').style.display = 'none';"
+              style="
+                background-color: #090840;
+                color: rgba(255, 255, 255, 0.25);
+                border: none;
+                outline: none;
+                padding: 14px 16px;
+                font-size: 17px;
+                margin: auto 0;
+                border-top: 0.5px solid rgba(1, 254, 255, 0.25);
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+              "
+            >
+              PERN STACK
+            </button>
+            <button
+              id="extras-btn"
+              class="portfolio-tab item-triple"
+              onClick="document.getElementById('extras').css({'display': 'inline-block', 'border-top': '0.5px solid rgba(1, 254, 255)', 'color': 'rgba(255, 255, 255)'});
+                       document.getElementById('shopify').css({'display':'none', 'border-top': '0.5px solid rgba(1, 254, 255,.25)', 'color': 'rgba(255, 255, 255,.25)'});
+                       document.getElementById('pernStack').css({'display':'none', 'border-top': '0.5px solid rgba(1, 254, 255,.25)', 'color': 'rgba(255, 255, 255,.25)'});"
+              style="
+                background-color: #090840;
+                color: rgba(255, 255, 255, 0.25);
+                border: none;
+                outline: none;
+                padding: 14px 16px;
+                font-size: 17px;
+                margin: auto 0;
+                border-top: 0.5px solid rgba(1, 254, 255, 0.25);
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+              "
+            >
+              EXTRAS
+            </button>
+          </div>
+          -->
 
-            <div class="item-triple section-card">
-              <img src="/images/french-moi.png" alt="French Moi" />
-              <h2>French Moi</h2>
-              <div class="section-button">
-                <a
-                  href="https://spaced-repitition-rebecca-seyi.vercel.app/"
-                  class="btn"
-                  target="_blank"
-                  >&nbsp;LIVE&nbsp;</a
-                >
-                <a
-                  href="https://github.com/beccahudson/Spaced-Repetition-Rebecca-Seyi"
-                  class="btn"
-                  target="_blank"
-                  >REPO</a
-                >
+          <div
+            id="shopify"
+            class="group portfolio-box portfolio-content"
+            style="color: white; padding: 0 50px; text-align: center"
+          ></div>
+          <div
+            id="pernStack"
+            class="group portfolio-box portfolio-content"
+            style="color: white; padding: 0 50px; text-align: center"
+          >
+            <div class="group portfolio-box">
+              <div class="item-triple section-card">
+                <img src="/images/virtual-desk.png" alt="Virtual Desk" />
+                <h2>Virtual Desk -in progress</h2>
+                <div class="section-button">
+                  <a
+                    href="https://virtual-desk.vercel.app/"
+                    class="btn"
+                    target="_blank"
+                    >&nbsp;LIVE&nbsp;</a
+                  >
+                  <a
+                    href="https://github.com/beccahudson/rebecca-virtual-desk-client"
+                    class="btn"
+                    target="_blank"
+                    >REPO</a
+                  >
+                </div>
+                <h3>PERN, Vercel, Heroku</h3>
+                <p><em>Solo Project</em></p>
+                <p>
+                  Virtual Desk is an app for students to get help more
+                  efficiently from a pool of approved resources such as
+                  teachers, teacher assistants and tutors.
+                </p>
               </div>
-              <h3>PERN, Vercel, Heroku</h3>
-              <p><em>Pair Project</em></p>
-              <p>
-                French Moi is a spaced repitition language learning app. Using a
-                singly linked list to cycle through questions and repeating the
-                ones answered incorrectly.
-              </p>
-            </div>
 
-            <div class="item-triple section-card">
-              <img src="/images/binaural.png" alt="Binaural" />
-              <h2>Binaural</h2>
-              <div class="section-button">
-                <a
-                  href="https://binaural-client.vercel.app/"
-                  class="btn"
-                  target="_blank"
-                  >&nbsp;LIVE&nbsp;</a
-                >
-                <a
-                  href="https://github.com/thinkful-ei-panda/binaural-client"
-                  class="btn"
-                  target="_blank"
-                  >REPO</a
-                >
+              <div class="item-triple section-card">
+                <img src="/images/french-moi.png" alt="French Moi" />
+                <h2>French Moi</h2>
+                <div class="section-button">
+                  <a
+                    href="https://spaced-repitition-rebecca-seyi.vercel.app/"
+                    class="btn"
+                    target="_blank"
+                    >&nbsp;LIVE&nbsp;</a
+                  >
+                  <a
+                    href="https://github.com/beccahudson/Spaced-Repetition-Rebecca-Seyi"
+                    class="btn"
+                    target="_blank"
+                    >REPO</a
+                  >
+                </div>
+                <h3>PERN, Vercel, Heroku</h3>
+                <p><em>Pair Project</em></p>
+                <p>
+                  French Moi is a spaced repitition language learning app. Using
+                  a singly linked list to cycle through questions and repeating
+                  the ones answered incorrectly.
+                </p>
               </div>
-              <h3>PERN, Web Audio API, Canvas, SineWave.js</h3>
-              <p><em>Team of 6 Project</em></p>
-              <p>
-                Binaural generates binaural beats and audio visualizations to
-                help users achieve altered states of consciousness.
-              </p>
+
+              <div class="item-triple section-card">
+                <img src="/images/binaural.png" alt="Binaural" />
+                <h2>Binaural</h2>
+                <div class="section-button">
+                  <a
+                    href="https://binaural-client.vercel.app/"
+                    class="btn"
+                    target="_blank"
+                    >&nbsp;LIVE&nbsp;</a
+                  >
+                  <a
+                    href="https://github.com/thinkful-ei-panda/binaural-client"
+                    class="btn"
+                    target="_blank"
+                    >REPO</a
+                  >
+                </div>
+                <h3>PERN, Web Audio API, Canvas, SineWave.js</h3>
+                <p><em>Team of 6 Project</em></p>
+                <p>
+                  Binaural generates binaural beats and audio visualizations to
+                  help users achieve altered states of consciousness.
+                </p>
+              </div>
             </div>
           </div>
+          <div
+            id="extras"
+            class="group portfolio-box portfolio-content"
+            style="color: white; padding: 0 50px; text-align: center"
+          ></div>
         </section>
 
         <section id="contact" class="wrapper">
@@ -227,5 +315,10 @@
       </div>
       <!-- group -->
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

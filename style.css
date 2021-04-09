@@ -95,6 +95,11 @@ span {
 .hidden {
   display: none;
 }
+.active {
+  display: inline-block;
+  border-top: 0.5px solid rgb(1, 254, 255);
+  color: rgb(255, 255, 255);
+}
 .greater,
 .lesser {
   display: none;
@@ -236,7 +241,7 @@ header h3 {
   margin: 0;
   padding: 0;
   color: var(--magenta, magenta);
-  font-size: 4.5vw;
+  font-size: 4vw;
   text-align: center;
 }
 
